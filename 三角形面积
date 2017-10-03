@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+#include<cmath>
+#include<cstdlib>
+inline double area(double L, double W, double H)
+{
+	double a = (1.0 / 2)*(L + W + H);
+	double s = sqrt(a*(a - L)*(a - W)*(a - H));
+	return s;
+}
+int main()
+{
+	double x=3.0;
+	double y=4.0;
+	double z=5.0;
+	double newArea;
+	newArea = area(x, y, z);
+	cout << newArea << endl;
+	system("PAUSE");
+}
